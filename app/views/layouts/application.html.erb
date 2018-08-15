@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta property="og:title" content="The Hacking Project" />
       <meta property="og:url" content="https://thp-growth-hack.herokuapp.com" />
       <meta property="og:description" content="The Hacking Project est une école en peer-learning gratuite, sans locaux, sans sélection. L'enseignement est composé intégralement de projets en équipe." />
@@ -33,6 +35,7 @@
   </head>
 
   <body>
+    <%= render 'layouts/header' %>
     <%= yield %>
   </body>
 </html>
