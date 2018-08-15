@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta property="og:title" content="The Hacking Project" />
       <meta property="og:url" content="https://thp-growth-hack.herokuapp.com" />
       <meta property="og:description" content="The Hacking Project est une école en peer-learning gratuite, sans locaux, sans sélection. L'enseignement est composé intégralement de projets en équipe." />
@@ -11,6 +13,9 @@
       <link rel="manifest" href="/assets/favicon/manifest-cf975201fd8ac78a1f1a203357573d50031f1cc33436d099743df6428b8a38a2.json">
       <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab-8af1cfcf7525ccdccb490f9f5adad396653a4969b419e0a9a9d3a1088140a912.svg" color="#5bbad5">
       <link rel="shortcut icon" href="/assets/favicon/favicon-cbf10361dc90b277565960736d4897fddef5468bff6299811ea9498459d56d21.ico">
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123957244-1"></script>
     <script>
@@ -20,16 +25,24 @@
 
       gtag('config', 'UA-123957244-1');
     </script>
+    <!-- Fin Tag Google Analytics -->
 
+    <!-- Début script Mailchimp -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <!-- Fin script Mailchimp -->
     <title>LandingGrowthHacking</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Crisp ChatBot script -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d80edc43-e9b3-4842-8e07-311c5d1f2919";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
   </head>
 
   <body>
+    <%= render 'layouts/header' %>
     <%= yield %>
   </body>
 </html>

@@ -1,3 +1,48 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper{
+  padding-top: 50px;
+  background-image: url("bg2.jpg");
+  height: 700px;
+  .sqr{
+    height: 200px;
+    width: 200;
+    padding: 20px;
+    font-family: 'Inconsolata', monospace;
+  }
+  .sqr-vert-fonce{
+    background-color: #1a2625;
+    color: white;
+  }
+  .sqr-logo{
+    background-color: white;
+  }
+  .sqr-text {
+    background-color: white;
+  }
+  .vert {
+    color: #2cff54;
+  }
+  .bleu {
+    color: #0dffe2;
+  }
+  .jaune {
+    color: #e0ff00;
+  }
+  .violet {
+    color: #a01fea;
+  }
+  .rose {
+    color: #f216af;
+  }
+  .blanc {
+    color: white;
+  }
+}
+
+
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
