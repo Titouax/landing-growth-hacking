@@ -5,6 +5,7 @@ ruby '2.5.1'
 gem 'dotenv'
 gem 'rubocop'
 gem 'simplecov', require: false, group: :test
+gem 'rails-erd', group: :development
 
 #Gem bootstrap - Début
 gem 'bootstrap', '~> 4.1.3'

@@ -31,3 +31,6 @@
 
 # Ignore the simplecov report
 coverage
+
+# Ignore the Entity-Relationship Diagrams pdf
+erd.pdf
