@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_15_145927) do
+ActiveRecord::Schema.define(version: 2018_08_15_183750) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "leads", force: :cascade do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.string "email"
+    t.bigint "category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_leads_on_category_id"
+  end
 
   create_table "subscribers", force: :cascade do |t|
     t.string "firstname"
@@ -21,6 +37,10 @@ ActiveRecord::Schema.define(version: 2018_08_15_145927) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "category_id"
+    t.index ["category_id"], name: "index_subscribers_on_category_id"
   end
 
+  add_foreign_key "leads", "categories"
+  add_foreign_key "subscribers", "categories"
 end
