@@ -32,7 +32,7 @@ class Bottwitter
 		  begin
 			@client.follow!(etudiant)
 		  rescue Exception, NotFound, Forbidden
-		    next 
+		    next
 		  end
 		end
 	end
@@ -43,4 +43,4 @@ class Bottwitter
 	end
 end
 
-Bottwitter.new.perform
+#Bottwitter.new.perform
