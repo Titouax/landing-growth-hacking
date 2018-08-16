@@ -2,23 +2,74 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.wrapper{
-  padding-top: 50px;
+body {
   background-image: url("bg2.jpg");
-  height: 700px;
-  .sqr{
+
+  .wrapper {
+    height: 700px;
+    width: 1200px;
+    margin: 50px auto;
+  }
+  .sqr {
     height: 200px;
     width: 200;
     padding: 20px;
     font-family: 'Inconsolata', monospace;
+    border-radius: 1px;
   }
-  .sqr-vert-fonce{
+  .sqr-vert-fonce {
     background-color: #1a2625;
+    font-size: 14px;
     color: white;
   }
-  .sqr-logo{
+
+  .sqr-logo {
     background-color: white;
   }
+
+
+
+  .logo-name {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .rs{
+    height: 100px;
+    width: 100px;
+  }
+  .logo-rs {
+
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .logo-rs > li {
+    display: inline-block;
+  }
+  .fab {
+    color: black;
+  }
+  .fas {
+    color: black;
+  }
+  .fab:hover {
+    opacity: 0.5;
+  }
+  .fas:hover {
+    opacity: 0.5;
+  }
+
+
+
+
+  h1 {
+  font-size: 15px;
+  }
+
+  
   .sqr-text {
     background-color: white;
   }
@@ -41,8 +92,28 @@
     color: white;
   }
 }
+#mc_embed_signup {
+  background:#fff; clear:left 
+}
+#mc_embed_signup form {
+padding-left: 0px;
+padding-top: 0px;
+}
+#mc_embed_signup .button {
+  border-radius: 1px;
+  background-color: #1a2625;
+}
+#mc_embed_signup .mc-field-group input {
+  text-indent: 8%;
+  border-radius: 1px;
+}
+
+.footer {
+    width: 700px;
+    padding: 100px;
+    margin: auto auto;
+}
 
 
-#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
