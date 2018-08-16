@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   get 'pages/home'
   get 'pages/hometwo'
   get 'pages/hometree'
-  get 'pages/newsletter'
 
   root 'pages#home'
   get 'newsletter', to: 'pages#newsletter'
