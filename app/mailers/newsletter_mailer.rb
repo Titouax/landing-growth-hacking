@@ -1,5 +1,3 @@
-load 'mailchimp.rb'
-
 class NewsletterMailer < ApplicationMailer
 
   def contact(emails)

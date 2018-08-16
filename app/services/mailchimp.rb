@@ -19,5 +19,3 @@ class Mchimp
   end
 
 end
-
-Mchimp.new.collect_mails
