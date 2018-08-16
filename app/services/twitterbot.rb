@@ -1,10 +1,12 @@
+load 'app/services/cleaner.rb'
 require 'dotenv'
 require 'twitter'
 Dotenv.load
 
 class Bottwitter
 	def initialize
-		@etudiantnom = []
+		@email_clean = Cleaner.new.perform
+		@result_name = []
 		@client = Twitter::REST::Client.new do |config|
  			config.consumer_key        = ENV["TWITTER_API_KEY"]
  			config.consumer_secret     = ENV["TWITTER_API_SECRET"]
@@ -14,15 +16,18 @@ class Bottwitter
 	end
 
 	def search
-		@client.search("pope", result_type: "recent").take(1).each do |tweet|
-	  		puts "#{tweet.user.screen_name}: #{tweet.text}"
-	 		@client.favorite(tweet)
-	 		@client.update("{@tweet.user.screen_name} Welcome to Philadelphia!")
+		@email_clean.each do |nom|
+			@client.search(nom, result_type: "recent").take(1).each do |result|
+	  			puts "#{result.user.screen_name}"
+				@result_name << result.user.screen_name
+				puts "result push"
+				sleep(5)
+			end
 		end
 	end
 
 	def follow
-		@etudiantnom.each do |etudiant|
+		@result_name.each do |etudiant|
 
 		  begin
 			@client.follow!(etudiant)
@@ -35,7 +40,7 @@ class Bottwitter
 	def perform
 		search
 		follow
-		tweet
 	end
 end
 
+Bottwitter.new.perform
