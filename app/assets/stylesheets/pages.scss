@@ -29,26 +29,20 @@ body {
 
 
 
-  .logo-name {
-    height: 100px;
-    width: 100px;
+  .row-logo-name {
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
 
-  .rs{
-    height: 100px;
-    width: 100px;
-  }
+
   .logo-rs {
-
     list-style: none;
     padding-left: 0px;
   }
-
   .logo-rs > li {
     display: inline-block;
   }
+
   .fab {
     color: black;
   }
