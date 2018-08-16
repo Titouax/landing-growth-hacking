@@ -4,6 +4,7 @@
 
 body {
   background-image: url("bg5.jpg");
+  background: no-repeat center/100% url(/assets/bg5.jpg);
   background-color: black !important;
   zoom: 1;
   height: 100vh;
@@ -106,6 +107,27 @@ padding-top: 0px;
   text-indent: 8%;
   border-radius: 1px;
 }
+
+#mc-field-group:focus {
+    outline-color: none;
+    outline-style: none;
+    outline-width: none;
+    outline: none;
+}
+
+
+#required-email:focus {
+    outline-color: none;
+    outline-style: none;
+    outline-width: none;
+    outline: none;
+}
+
+
+
+
+
+
 
 
 
