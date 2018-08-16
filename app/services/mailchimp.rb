@@ -7,6 +7,7 @@ Dotenv.load
 
 class Mchimp
 
+  # Export the mail addresses from newsletter subscribers to send them to SendGrid
   def collect_mails
     all_mails = []
     export = Gibbon::Export.new(api_key: ENV['MAILCHIMP_API_KEY'], timeout: 1200)
@@ -16,6 +17,10 @@ class Mchimp
       end
     end
     return all_mails
+  end
+
+  def 
+
   end
 
 end
