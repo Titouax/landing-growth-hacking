@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 gem 'dotenv'
+gem 'gibbon'
 gem 'rubocop'
 gem 'simplecov', require: false, group: :test
 gem 'rails-erd', group: :development
