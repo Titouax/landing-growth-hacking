@@ -18,9 +18,4 @@ class Mchimp
     end
     return all_mails
   end
-
-  def 
-
-  end
-
 end
