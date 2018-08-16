@@ -6,4 +6,9 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get newsletter" do
+    get pages_newsletter_url
+    assert_response :success
+  end
+
 end
