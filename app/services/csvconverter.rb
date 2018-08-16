@@ -52,4 +52,5 @@ end
 #CsvConvert.new.mails_insti_cult
 #CsvConvert.new.mailspoitiers
 #
-#puts CsvConvert.new.mailsnanterre
+
+puts CsvConvert.new.mailsnanterre
