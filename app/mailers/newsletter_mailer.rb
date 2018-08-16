@@ -1,4 +1,4 @@
-load 'app/services/mailchimp.rb'
+load 'mailchimp.rb'
 
 class NewsletterMailer < ApplicationMailer
 
