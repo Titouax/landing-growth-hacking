@@ -1,11 +1,12 @@
 require 'csv'
 
 class CsvConvert
-  attr_accessor :cat1emails, :cat2emails
+  attr_accessor :emailscult, :emailpoitiers, :emailnanterre
 
   def initialize
-    @cat1emails = []
-    @cat2emails = []
+    @emailscult = []
+    @emailpoitiers = []
+    @emailnanterre = []
   end
 
   def csv_to_arrayhash
@@ -19,28 +20,36 @@ class CsvConvert
   def separate_mails
     csv_to_arrayhash.each do |hash|
       if hash["category_id"] == "1"
-         @cat1emails << hash["email"]
+         @emailscult << hash["email"]
       elsif hash["category_id"] == "2"
-         @cat2emails << hash["email"]
+         @emailpoitiers << hash["email"]
       end
     end
   end
 
-  def category1mail
+  def mails_insti_cult
     separate_mails
-    return @cat1emails
+    return @emailscult
   end
 
-  def category2mail
+  def mailspoitiers
     separate_mails
-    return @cat2emails
+    return @emailpoitiers
   end
 
-  def csv_to_array
-    csv_data = CSV.read 'scrap.csv'
-    
+  def mailsnanterre
+    csv_data = CSV.read 'db/scrapp.csv'
+    headers = csv_data.shift.map {|i| i.to_s }
+    string_data = csv_data.map {|row| row.map {|cell| cell.to_s } }
+    array_of_hashes = string_data.map {|row| Hash[*headers.zip(row).flatten] }
+    array_of_hashes.each do |hash|
+      @emailnanterre << hash["email"]
+    end
+    return @emailnanterre
   end
 end
 
-CsvConvert.new.category1mail
-CsvConvert.new.category2mail
+#CsvConvert.new.mails_insti_cult
+#CsvConvert.new.mailspoitiers
+#
+puts CsvConvert.new.mailsnanterre
