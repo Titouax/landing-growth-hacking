@@ -1,4 +1,4 @@
-load 'mailchimp'
+load 'app/services/mailchimp.rb'
 
 desc "This task is called by the Heroku scheduler add-on"
 task :send_newsletter => :environment do
