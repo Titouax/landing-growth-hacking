@@ -3,6 +3,5 @@ class PagesController < ApplicationController
   end
 
   def newsletter
-    NewsletterMailer.contact(Mchimp.new.collect_mails).deliver_now
   end
 end
