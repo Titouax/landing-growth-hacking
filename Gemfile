@@ -7,6 +7,7 @@ gem 'gibbon'
 gem 'rubocop'
 gem 'simplecov', require: false, group: :test
 gem 'rails-erd', group: :development
+gem 'sendgrid-ruby'
 
 #Gem bootstrap - Début
 gem 'bootstrap', '~> 4.1.3'
