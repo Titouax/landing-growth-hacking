@@ -1,13 +1,13 @@
 # Projet THP Landing pages
- <a href="https://thp-growth-hack.herokuapp.com">Thp-Growth-Hack</a>
+ <a href="https://thp-growth-hack.herokuapp.com" target="_blank">Thp-Growth-Hack</a>
 
 ### Salut  mouss'!  😎
 Bon comme d'hab on à fait du sale, mais tu le sais déja 😅
 
 Comme demandé, on a 3 landing pages pour 3 cibles différentes : 
-- <a href="https://thp-growth-hack.herokuapp.com">les étudiants de Poitiers</a>
-- <a href="https://thp-growth-hack.herokuapp.com/pages/hometwo/">les étudiants de Nanterre</a>
-- <a href="https://thp-growth-hack.herokuapp.com/pages/hometree/">les centres culturelles de Bretagne</a>
+- <a href="https://thp-growth-hack.herokuapp.com" target="_blank">les étudiants de Poitiers</a>
+- <a href="https://thp-growth-hack.herokuapp.com/pages/hometwo/" target="_blank">les étudiants de Nanterre</a>
+- <a href="https://thp-growth-hack.herokuapp.com/pages/hometree/" target="_blank">les centres culturelles de Bretagne</a>
 
 Le but de ce projet est de synthétiser un grand nombre de hacks que nous avons appris au cours de la formation THP pendant les 6 dernieres semaines. 
 Il s'agissait de créer une application Rails capable d'envoyer des mails à une liste de prospects (#PasPropreDuTout / #LaRGPDestTuéeDansl'Oeuf), leur proposer d'atterir sur une landing page adaptée en fonction des publics visés(#AllezViensOnEstBien / #TuConnaisDisneyLand?), d'où ensuite ils pourront s'inscrire à une newsletter qui leur serait envoyée toutes les semaines(#T'enApourl'AnnéeÀteDésincrire). 
@@ -57,7 +57,7 @@ Bah oui ! Rien de tel qu'un petit "Allo ... Mamie ?! Hey j'ai fait un super site
 ## Google Analytics A.K.A. La Base
 Pas besoin de t'expliquer, tu connais, on met un script, on track les Users, on créer nos funnels de conversion, on récupère des Insight Stylé comme le taux de rebond, le nombre de chats dans la maison au moment de la connexion, Le nombre de click sur le bouton bleu plutot que sur le bouton orange, toussa toussa, Mais tu connais ! 
 ## HotJar
-Rien de tel qu'un bon HeatMap des familes pour te rendre compte de tes erreurs en UX desgin, du coup on à intégré HotJar, un super outil qui nous permet d'avoir <a href="https://insights.hotjar.com/h?site=981541&heatmap=3006616&token=d955ecbcc4441c5f9b5f4745b354c65d&device=desktop&type=click">Ceci</a>
+Rien de tel qu'un bon HeatMap des familes pour te rendre compte de tes erreurs en UX desgin, du coup on à intégré HotJar, un super outil qui nous permet d'avoir <a href="https://insights.hotjar.com/h?site=981541&heatmap=3006616&token=d955ecbcc4441c5f9b5f4745b354c65d&device=desktop&type=click" target="_blank">Ceci</a>
 Hey ouais !  Tiens ! t'en veux ? 👊
 # Etape 7: Des test of course !!!!! 
 D'ailleurs, on est encore en train de les test, donc bon ... 
@@ -67,6 +67,11 @@ Rails Test
 ```
 # Etape 8: Pistes d'amélioration 
 
+- Nous pensons rajouter du JS afin d'animer les fond d'écran
+- Nous pensons également améliorer le reponsive design de notre app en wrappant certain éléments 
+- Nous souhaitons par la suite utiliser les avantages de notre graphisme pour effectuer des mouse:hover sur les elements et afficher de nouvelles options 
+
+- Trouver du temps pour dormir 😅
 
 ## Bilan
 
