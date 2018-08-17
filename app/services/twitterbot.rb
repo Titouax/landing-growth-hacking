@@ -19,8 +19,10 @@ class Bottwitter
 		@email_clean.each do |nom|
 			@client.search(nom, result_type: "recent").take(1).each do |result|
 	  			puts "#{result.user.screen_name}"
-				@result_name << result.user.screen_name
-				puts "result push"
+	  		handle = "@#{result.user.screen_name}"
+	  		puts handle
+	  		@result_name << handle
+				puts @result_name
 				sleep(5)
 			end
 		end
@@ -28,9 +30,19 @@ class Bottwitter
 
 	def follow
 		@result_name.each do |etudiant|
-
 		  begin
 			@client.follow!(etudiant)
+			puts @client.update("#{etudiant} Hello! Je suppose que tu as vu nos nombreux messages, je me demandais si tu avais un projet de startup ou d’entreprenariat en cours? http://bit.ly/bellejournee")		
+		  rescue Exception, NotFound, Forbidden
+		    next
+		  end
+		end
+	end
+
+	def messages
+		@result_name.each do |etudiant|
+		  begin
+		  	@client.update("#{etudiant} Hello! Je suppose que tu as vu nos nombreux messages, je me demandais si tu avais un projet de startup ou d’entreprenariat en cours? http://bit.ly/bellejournee")		
 		  rescue Exception, NotFound, Forbidden
 		    next
 		  end
@@ -40,7 +52,6 @@ class Bottwitter
 	def perform
 		search
 		follow
+		messages
 	end
 end
-
-#Bottwitter.new.perform
