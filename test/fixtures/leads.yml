@@ -4,10 +4,8 @@ one:
   firstname: MyString
   lastname: MyString
   email: MyString
-  Category: one
 
 two:
   firstname: MyString
   lastname: MyString
   email: MyString
-  Category: two
