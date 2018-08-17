@@ -1,7 +1,4 @@
-load 'app/services/csvconverter.rb'
-
 # Ce service nous permet d'effacer toutes les informations après le "@", le "@" y compris
-
 class Cleaner
 	def initialize
 	  @mails_nanterre = []
@@ -15,14 +12,14 @@ class Cleaner
 	  @mails_poitiers = CsvConvert.new.mailspoitiers
 	  @mails_nanterre = CsvConvert.new.mailsnanterre
 	  @mails_inst.each do |item|
-		@etudiantnom << item[/[^@]+/]	
-	  end 
+		@etudiantnom << item[/[^@]+/]
+	  end
 	  @mails_poitiers.each do |item|
-		@etudiantnom << item[/[^@]+/]	
-	  end 
+		@etudiantnom << item[/[^@]+/]
+	  end
 	  @mails_nanterre.each do |item|
-		@etudiantnom << item[/[^@]+/]	
-	  end 
+		@etudiantnom << item[/[^@]+/]
+	  end
 	  return @etudiantnom
 	end
 
@@ -30,5 +27,3 @@ class Cleaner
 		cleaning
 	end
 end
-
-
