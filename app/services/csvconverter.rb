@@ -48,8 +48,3 @@ class CsvConvert
     return @emailnanterre
   end
 end
-
-#CsvConvert.new.mails_insti_cult
-#CsvConvert.new.mailspoitiers
-#
-puts CsvConvert.new.mailsnanterre
