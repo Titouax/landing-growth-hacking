@@ -61,4 +61,5 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "form"
   end
 
+  
 end
