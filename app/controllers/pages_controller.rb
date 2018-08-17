@@ -1,6 +1,3 @@
-load 'mailchimp'
-load 'csvconverter'
-
 class PagesController < ApplicationController
 
   def home
