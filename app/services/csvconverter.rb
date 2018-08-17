@@ -17,7 +17,7 @@ class CsvConvert
     return array_of_hashes
   end
 
-# Etant donné que les mails sont groupés par catégorie dans un fichier csv, nous devons les séparer pour 
+# Etant donné que les mails sont groupés par catégorie dans un fichier csv, nous devons les séparer pour
 # pouvoir les utiliser en fonction de nos landing pages correspondantes
   def separate_mails
     csv_to_arrayhash.each do |hash|
@@ -50,8 +50,3 @@ class CsvConvert
     return @emailnanterre
   end
 end
-
-# Si vous voulez tester les listes, veuillez decommenter les lignes ci-dessus
-# puts CsvConvert.new.mails_insti_cult
-# puts CsvConvert.new.mailspoitiers
-# puts CsvConvert.new.mailsnanterre
