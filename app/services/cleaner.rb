@@ -1,5 +1,7 @@
 load 'app/services/csvconverter.rb'
 
+# Ce service nous permet d'effacer toutes les informations après le "@", le "@" y compris
+
 class Cleaner
 	def initialize
 	  @mails_nanterre = []
