@@ -79,3 +79,14 @@ C'est la première fois depuis le début de la formation que nous avions à réa
 ☀️   $ bundle install
 
 ☀️   $ rails db:create db:migrate
+
+## Créateurs : La Fameuse Fine Équipe ##
+
+Derrière cet énième repository stylé se cache...
+* <a href="https://github.com/AniMoure">Anisoara</a>
+* <a href="https://github.com/clydeat">Clyde</a>
+* <a href="https://github.com/TheFSilver">François D.</a>
+* <a href="https://github.com/skageraz">Jeremy Rak</a>
+* <a href="https://github.com/Titouax">Titouan</a>
+
+Made with ♥ in Paris
