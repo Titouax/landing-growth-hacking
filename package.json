@@ -1,5 +1,7 @@
 {
   "name": "landing-growth-hacking",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "hover.css": "^2.3.2"
+  }
 }

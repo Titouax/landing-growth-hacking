@@ -5,6 +5,7 @@ ruby '2.5.1'
 gem 'dotenv'
 gem 'gibbon'
 gem 'rubocop'
+gem 'twitter'
 gem 'simplecov', require: false, group: :test
 gem 'rails-erd', group: :development
 gem 'sendgrid-ruby'

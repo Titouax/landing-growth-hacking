@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background-image: url("bg4.jpg");
+  background: no-repeat center/100% url(/assets/bg2.jpg);
   background-color: black !important;
   zoom: 1;
   height: 100vh;
@@ -22,7 +22,7 @@ body {
       border-radius: 1px;
     }
     .sqr-vert-fonce {
-      background-color: #1a2625;
+      background-color: #600505;
       font-size: 14px;
       color: white;
     }
