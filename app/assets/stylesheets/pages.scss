@@ -12,163 +12,7 @@ body {
 }
 .wrapper {
 
-    .logoenh1 {
-    color: black;
-    text-decoration: none;
-    }
-    .logoenh1:hover {
-    opacity: 0.5;
-    }
-    .logo:hover {
-    transform: scale(1.1);
-    }
-
-
-
-
-
-
-
-
-
-
-
-/* Outline Out */
-.hvr-outline-out {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-}
-.hvr-outline-out:before {
-  content: '';
-  position: absolute;
-  border: #e1e1e1 solid 1px;
-  top: 2px;
-  right: -4px;
-  bottom: 0;
-  left: -4px;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: top, right, bottom, left;
-  transition-property: top, right, bottom, left;
-}
-.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
-  top: -8px;
-  right: -8px;
-  bottom: -8px;
-  left: -8px;
-}
-
-
-
-
-/* Wobble Skew */
-@-webkit-keyframes hvr-wobble-skew {
-  16.65% {
-    -webkit-transform: skew(-12deg);
-    transform: skew(-12deg);
-  }
-  33.3% {
-    -webkit-transform: skew(10deg);
-    transform: skew(10deg);
-  }
-  49.95% {
-    -webkit-transform: skew(-6deg);
-    transform: skew(-6deg);
-  }
-  66.6% {
-    -webkit-transform: skew(4deg);
-    transform: skew(4deg);
-  }
-  83.25% {
-    -webkit-transform: skew(-2deg);
-    transform: skew(-2deg);
-  }
-  100% {
-    -webkit-transform: skew(0);
-    transform: skew(0);
-  }
-}
-@keyframes hvr-wobble-skew {
-  16.65% {
-    -webkit-transform: skew(-12deg);
-    transform: skew(-12deg);
-  }
-  33.3% {
-    -webkit-transform: skew(10deg);
-    transform: skew(10deg);
-  }
-  49.95% {
-    -webkit-transform: skew(-6deg);
-    transform: skew(-6deg);
-  }
-  66.6% {
-    -webkit-transform: skew(4deg);
-    transform: skew(4deg);
-  }
-  83.25% {
-    -webkit-transform: skew(-2deg);
-    transform: skew(-2deg);
-  }
-  100% {
-    -webkit-transform: skew(0);
-    transform: skew(0);
-  }
-}
-.hvr-wobble-skew {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
-  -webkit-animation-name: hvr-wobble-skew;
-  animation-name: hvr-wobble-skew;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
-
-
-
-
-.hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
-}
-
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-    transform: scale(1.1);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+// la base des differents square
     .sqr {
       height: 200px;
       width: 200;
@@ -181,19 +25,33 @@ body {
       font-size: 14px;
       color: white;
     }
-
-    .sqr-logo {
+    .sqr-white {
       background-color: white;
     }
-
-
-
+// pour la case numero un du logo 
+    h1 {
+    font-size: 15px;
+    }
+    .logoenh1 {
+    color: black;
+    text-decoration: none;
+    }
+    .logoenh1:hover {
+    opacity: 0.8;
+    }
+    .logo:hover {
+    transform: scale(1.1);
+    }
+    .linkthp {
+      text-decoration: none;
+    }
+    .linkthp:hover {
+    opacity: 0.8;
+    }
     .row-logo-name {
       display: flex;
       align-items: center;
     }
-
-
     .logo-rs {
       list-style: none;
       padding-left: 0px;
@@ -201,7 +59,6 @@ body {
     .logo-rs > li {
       display: inline-block;
     }
-
     .fab {
       color: black;
     }
@@ -209,23 +66,126 @@ body {
       color: black;
     }
     .fab:hover {
-      opacity: 0.5;
+      opacity: 0.8;
     }
     .fas:hover {
-      opacity: 0.5;
+      opacity: 0.8;
     }
-
-
-
-
-    h1 {
-    font-size: 15px;
+    /* Outline Out effet de ouffffff sur le mot hieroglyphes*/
+    .hvr-outline-out {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
     }
-
-    
-    .sqr-text {
-      background-color: white;
+    .hvr-outline-out:before {
+      content: '';
+      position: absolute;
+      border: #e1e1e1 solid 1px;
+      top: 2px;
+      right: -4px;
+      bottom: 0;
+      left: -4px;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: top, right, bottom, left;
+      transition-property: top, right, bottom, left;
     }
+    .hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+      top: -8px;
+      right: -8px;
+      bottom: -8px;
+      left: -8px;
+    }
+    /* Wobble Skew effet de ouffffff sur les trucs de code */
+    @-webkit-keyframes hvr-wobble-skew {
+      16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
+      }
+      33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+      }
+      49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+      }
+      66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+      }
+      83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+      }
+      100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+      }
+    }
+    @keyframes hvr-wobble-skew {
+      16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
+      }
+      33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+      }
+      49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+      }
+      66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+      }
+      83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+      }
+      100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+      }
+    }
+    .hvr-wobble-skew {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    }
+    .hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
+      -webkit-animation-name: hvr-wobble-skew;
+      animation-name: hvr-wobble-skew;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    /* Wobble Skew effet de ouffffff sur les trucs de code */
+    .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+    .hvr-grow:hover,
+    .hvr-grow:focus,
+    .hvr-grow:active {
+        transform: scale(1.1);
+    }
+// typos de ouff pour le code hyeroglyphes
     .vert {
       color: #2cff54;
     }
@@ -245,8 +205,7 @@ body {
       color: white;
     }
 }
-
-
+// tous les trucs pour le form d'inscription newsletter
 #mc_embed_signup {
   background:#fff; clear:left 
 }
@@ -262,29 +221,27 @@ padding-top: 0px;
   text-indent: 8%;
   border-radius: 1px;
 }
-
 #mc-field-group:focus {
     outline-color: none;
     outline-style: none;
     outline-width: none;
     outline: none;
 }
-
-
 #required-email:focus {
     outline-color: none;
     outline-style: none;
     outline-width: none;
     outline: none;
 }
-
-
-
-
-
-
-
-
-
-/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+#mce-EMAIL:focus {
+    outline-color: none;
+    outline-style: none;
+    outline-width: none;
+    outline: none;
+}
+#mc-embedded-subscribe:focus {
+    outline: none;
+    outline-color: none;
+    outline-style: none;
+    outline-width: none;
+}
