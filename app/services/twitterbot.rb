@@ -3,6 +3,9 @@ require 'dotenv'
 require 'twitter'
 Dotenv.load
 
+# Ce service nous permet de trouver les handles des personnes ciblées, ainsi que leur envoyer des
+# tweets pour leur parler de THP. 
+
 class Bottwitter
 	def initialize
 		@email_clean = Cleaner.new.perform
@@ -19,10 +22,9 @@ class Bottwitter
 		@email_clean.each do |nom|
 			@client.search(nom, result_type: "recent").take(1).each do |result|
 	  			puts "#{result.user.screen_name}"
-	  		handle = "@#{result.user.screen_name}"
-	  		puts handle
-	  		@result_name << handle
-				puts @result_name
+	  			handle = "@#{result.user.screen_name}"
+	  			puts handle
+	  			@result_name << handle
 				sleep(5)
 			end
 		end
@@ -55,3 +57,8 @@ class Bottwitter
 		messages
 	end
 end
+
+# Si vous voulez tester les listes, veuillez decommenter les lignes ci-dessus
+# puts 
+# puts CsvConvert.new.mailspoitiers
+# puts CsvConvert.new.mailsnanterre
